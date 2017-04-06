@@ -1,0 +1,16 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Authentication": {
+    "Bucket": "jackmallet-server",
+    "Key": "dockercfg"
+  },
+  "Image": {
+    "Name": "fabianwareio/jackmallet-server:<TAG>",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "5000"
+    }
+  ]
+}
