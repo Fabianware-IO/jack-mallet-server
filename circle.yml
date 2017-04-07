@@ -8,7 +8,7 @@ machine:
 
 dependencies:
   pre:
-    - pip install awscli
+    - pip install awscli awsebcli
     - docker build --rm=false -t fabianwareio/jackmallet-server:$CIRCLE_SHA1 .
 
 test:
@@ -20,5 +20,6 @@ deployment:
   elasticbeanstalk:
     branch: master
     commands:
-      - docker login -e bobby.smith@fabianware.io -u bsmith8317 -p 8317mr4110ls
+      - ./setup-eb.sh
+      - docker login -e bobby.smith@fabianware.io -u $DOCKER_USER -p $DOCKER_PASSWORD
       - ./deploy.sh $CIRCLE_SHA1
