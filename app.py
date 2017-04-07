@@ -48,7 +48,7 @@ def login():
             {'$set':{"authentication_token": token, "token_age": token_age}})
         return jsonify(
             {'response':{
-                'user':{'username': user['username'],
+                'user':{'username': user['username'], 'fullName': user['fullName'],
                         'authentication_token': token, "token_age": token_age}}})
     else:
         return make_response(jsonify({'error': 'unauthorized'}), 401)
