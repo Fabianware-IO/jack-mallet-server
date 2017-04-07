@@ -9,7 +9,7 @@ machine:
 dependencies:
   pre:
     - pip install awscli
-    - docker build --rm=false -t fabianware-io/jackmallet-server:$CIRCLE_SHA1 .
+    - docker build --rm=false -t fabianwareio/jackmallet-server:$CIRCLE_SHA1 .
 
 test:
   post:
