@@ -2,7 +2,7 @@
   "AWSEBDockerrunVersion": "1",
   "Authentication": {
     "Bucket": "jackmallet-server",
-    "Key": "dockercfg"
+    "Key": ".dockercfg"
   },
   "Image": {
     "Name": "fabianwareio/jackmallet-server:<TAG>",
