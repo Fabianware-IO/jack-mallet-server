@@ -14,7 +14,7 @@ dependencies:
 test:
   post:
     - docker run -d -p 5000:5000 -e "SECRET_KEY_BASE=jackmallet123!" fabianwareio/jackmallet-server:$CIRCLE_SHA1; sleep 10
-    - curl -- retry 10 --retry-delay 5 -v http://localhost:5000/api/v1/version.properties
+    - curl --retry 10 --retry-delay 5 -v http://localhost:5000/api/v1/version.properties
 
 deployment:
   elasticbeanstalk:
