@@ -2,7 +2,7 @@
   "AWSEBDockerrunVersion": "1",
   "Authentication": {
     "Bucket": "elasticbeanstalk-us-east-1-jackmallet-server",
-    "Key": "index.docker.io/config.json"
+    "Key": "config.json"
   },
   "Image": {
     "Name": "fabianwareio/jackmallet-server:<TAG>",
