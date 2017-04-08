@@ -2,7 +2,7 @@
 
 SHA1=$1
 
-EB_BUCKET=jackmallet-server
+EB_BUCKET=elasticbeanstalk-us-east-1-jackmallet-server
 EB_ENVIRONMENT_NAME="JackMallet-Server-Production"
 AWS_REGION="us-east-1"
 
