@@ -34,7 +34,7 @@ def index():
 
 @app.route(ROUTE_VERSION, methods=['GET'])
 def version():
-    return jsonify({'version': 'v 0.1.42'})
+    return jsonify({'version': 'v 0.1.43'})
 
 @app.route(ROUTE_LOGIN, methods=['POST'])
 def login():
